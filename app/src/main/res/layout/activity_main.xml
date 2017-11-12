@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.cryptoscale.MainActivity">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/Home_card_view"
+        android:layout_width="270dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        card_view:cardElevation="12dp"
+        card_view:contentPadding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/img_bitcoin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bitcoin"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="@string/bitcoin_icon"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/select_cryptocurrency"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="27sp"
+                android:textAlignment="center"
+                />
+
+            <ImageView
+                android:id="@+id/img_ethereum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ethereum_edited"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:contentDescription="@string/etheruem_icon"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
